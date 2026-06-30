@@ -1,0 +1,117 @@
+.filters {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 2rem;
+}
+
+.filters__title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-secondary);
+  margin-bottom: 2rem;
+}
+
+.filters__section {
+  margin-bottom: 2rem;
+}
+
+.filters__section:last-child {
+  margin-bottom: 0;
+}
+
+.filters__section-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-secondary);
+  margin-bottom: 1rem;
+}
+
+.filters__genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.filters__genre-btn {
+  padding: 0.4rem 1rem;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border: 1px solid var(--color-border);
+  color: var(--color-text-secondary);
+  background: transparent;
+  transition: all var(--transition);
+}
+
+.filters__genre-btn:hover {
+  border-color: var(--color-text-secondary);
+  color: var(--color-text);
+}
+
+.filters__genre-btn.active {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-text);
+}
+
+.filters__stars {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.filters__star-btn {
+  font-size: 2rem;
+  color: var(--color-border);
+  transition: color var(--transition);
+  line-height: 1;
+}
+
+.filters__star-btn.active,
+.filters__star-btn:hover {
+  color: var(--color-star);
+}
+
+.filters__rating-label {
+  font-size: 1.2rem;
+  color: var(--color-text-secondary);
+  margin-left: 0.8rem;
+}
+
+.filters__year-input {
+  width: 100%;
+  padding: 0.8rem 1.2rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-elevated);
+  color: var(--color-text);
+  font-size: 1.4rem;
+  font-family: inherit;
+  outline: none;
+  transition: border-color var(--transition);
+}
+
+.filters__year-input:focus {
+  border-color: var(--color-accent);
+}
+
+.filters__reset-btn {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-secondary);
+  font-size: 1.3rem;
+  transition: all var(--transition);
+  margin-top: 1.6rem;
+}
+
+.filters__reset-btn:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
